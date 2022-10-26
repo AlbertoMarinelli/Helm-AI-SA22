@@ -1,2 +1,3 @@
 # orchestrator
-The orchestrator repository for the Helm project
+
+Clone: git clone --recurse-submodules https://github.com/Helm-AI-SA22/orchestrator .
