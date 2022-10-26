@@ -1,3 +1,6 @@
 [submodule "front-end"]
 	path = front-end
 	url = https://github.com/Helm-AI-SA22/front-end
+[submodule "back-end"]
+	path = back-end
+	url = https://github.com/Helm-AI-SA22/back-end
