@@ -1,0 +1,22 @@
+version: '3.4'
+services:
+
+  be-container:
+    build:
+      context: back-end
+      dockerfile: Dockerfile.BE
+    entrypoint: /bin/sleep infinity
+    volumes:
+      - "./back-end/src/:/home/backenduser/src"
+    ports:
+      - "5000:5000"
+  
+  ai-container:
+    build:
+      context: artificial-intelligence
+      dockerfile: Dockerfile.AI
+    entrypoint: /bin/sleep infinity
+    volumes:
+      - "./artificial-intelligence/src/:/home/aiuser/src"
+    ports:
+      - "5001:5000"
