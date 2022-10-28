@@ -5,9 +5,9 @@ services:
     build:
       context: back-end
       dockerfile: Dockerfile.BE
-    entrypoint: /bin/sleep infinity
+    command: python app.py
     volumes:
-      - "./back-end/src/:/home/backenduser/src"
+      - "./back-end/:/home/backenduser/workdir"
     ports:
       - "5000:5000"
   
@@ -15,8 +15,21 @@ services:
     build:
       context: artificial-intelligence
       dockerfile: Dockerfile.AI
-    entrypoint: /bin/sleep infinity
+    command: python app.py
     volumes:
-      - "./artificial-intelligence/src/:/home/aiuser/src"
+      - "./artificial-intelligence/:/home/aiuser/workdir"
     ports:
       - "5001:5000"
+
+  fe-container:
+    build:
+      context: front-end
+      dockerfile: Dockerfile.FE
+    command: bash -c "npm install && npm start"
+    volumes:
+      - "./front-end/:/home/frontenduser/workdir"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - be-container
+      - ai-container
