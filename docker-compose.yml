@@ -25,9 +25,6 @@ services:
     build:
       context: front-end
       dockerfile: Dockerfile.FE
-    command: bash -c "npm install && npm start"
-    volumes:
-      - "./front-end/:/home/frontenduser/workdir"
     ports:
       - "3000:3000"
     depends_on:
