@@ -8,28 +8,13 @@ build:
 	docker compose up -d
 
 be-shell:
-	docker compose exec be-container /bin/bash
-
-be-exec:
-	docker compose exec be-container python app.py
+	docker compose exec -it be-container /bin/bash
 
 ai-shell:
-	docker compose exec ai-container /bin/bash
-
-ai-exec:
-	docker compose exec ai-container python app.py
+	docker compose exec -it ai-container /bin/bash
 
 fe-shell:
-	docker run -it -v ${CURDIR}/:/home/frontenduser/workdir -p 3000:3000 fe-container bash
-
-fe-exec:
-	docker run -it -v ${CURDIR}/:/home/frontenduser/workdir -p 3000:3000 fe-container npm start
-
-fe-build:
-	docker run -it -v ${CURDIR}/:/home/frontenduser/workdir -p 3000:3000 fe-container npm run build
-
-fe-test:
-	docker run -it -v ${CURDIR}/:/home/frontenduser/workdir -p 3000:3000 fe-container npm test
+	docker compose exec -it fe-container /bin/bash
 
 destroy:
 	docker-compose down -v
