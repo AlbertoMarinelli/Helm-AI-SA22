@@ -5,9 +5,6 @@ services:
     build:
       context: back-end
       dockerfile: Dockerfile.BE
-    command: python app.py
-    volumes:
-      - "./back-end/:/home/backenduser/workdir"
     ports:
       - "5000:5000"
   
@@ -15,9 +12,6 @@ services:
     build:
       context: artificial-intelligence
       dockerfile: Dockerfile.AI
-    command: python app.py
-    volumes:
-      - "./artificial-intelligence/:/home/aiuser/workdir"
     ports:
       - "5001:5000"
 
