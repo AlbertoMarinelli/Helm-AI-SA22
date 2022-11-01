@@ -1,26 +1,26 @@
 version: '3.4'
 services:
 
-  be-container:
+  helmbe:
     build:
       context: back-end
       dockerfile: Dockerfile.BE
     ports:
       - "5000:5000"
   
-  ai-container:
+  helmai:
     build:
       context: artificial-intelligence
       dockerfile: Dockerfile.AI
     ports:
       - "5001:5000"
 
-  fe-container:
+  helmfe:
     build:
       context: front-end
       dockerfile: Dockerfile.FE
     ports:
       - "3000:3000"
     depends_on:
-      - be-container
-      - ai-container
+      - helmbe
+      - helmai
