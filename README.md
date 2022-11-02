@@ -10,6 +10,7 @@ spostarsi nella cartella dell'orchestator
 controllare di trovarsi sul branch master e di aver fatto pull degli ultimi commit.
 
 `git checkout master`
+
 `git pull`
 
 Aggiornare le tre sotto repo con l'istruzione: 
@@ -18,7 +19,7 @@ Aggiornare le tre sotto repo con l'istruzione:
 
 I container dei tre sottomoduli possono essere eseguti  lanciando, dalla cartella dell'orchestator( l'esecuzione richiederà diversi minuti ): 
 
-`make` 
+`make build` 
 
 per testare il corretto funzionamento dei container interrogare i seguenti indirzzi: 
 
