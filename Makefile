@@ -17,6 +17,7 @@ help:
 	@echo "============ ${TB}${CB}Project: ${PROJECT_NAME}${CN}"
 	@echo ""
 	@echo "  ${CY}make build${CN}						build and run containers: ${CR}helmbe${CN}, ${CR}helmai${CN} and ${CR}helmfe${CN}"
+	@echo "  ${CY}make build-dev${CN}						build and run containers: ${CR}helmbe${CN}, ${CR}helmai${CN}. For FE development only"
 	@echo "  ${CY}make destroy${CN}						stop and remove running containers: ${CR}helmbe${CN}, ${CR}helmai${CN} and ${CR}helmfe${CN}"
 	@echo "  ${CY}make be-shell${CN}						open shell in ${CR}helmbe${CN}"
 	@echo "  ${CY}make ai-shell${CN}						open shell in ${CR}helmai${CN}"
@@ -33,6 +34,12 @@ build:
 	@echo "============ ${TB}${CB}Building and start containers${CN} ..."
 	@docker compose build --pull
 	@docker compose up -d
+	@echo "============ Done!"
+
+build-dev: 
+	@echo "============ ${TB}${CB}Building and start containers${CN} ..."
+	@docker compose build --pull
+	@docker compose up -d helmai helmbe
 	@echo "============ Done!"
 
 be-shell:

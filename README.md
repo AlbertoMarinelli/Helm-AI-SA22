@@ -47,6 +47,9 @@ e di eseguire il modulo in locale:
 
 `npm start`
 
+Per tirare su i moduli di BE e AI, utilizzare, direttamente dall'orchestrator, l'istruzione:
+
+`make-dev` 
 
 # Resources for git dummies
 
