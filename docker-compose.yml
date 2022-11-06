@@ -1,12 +1,5 @@
 version: '3.4'
 services:
-
-  helmbe:
-    build:
-      context: back-end
-      dockerfile: Dockerfile.BE
-    ports:
-      - "5000:5000"
   
   helmai:
     build:
@@ -14,6 +7,15 @@ services:
       dockerfile: Dockerfile.AI
     ports:
       - "5001:5000"
+
+  helmbe:
+    build:
+      context: back-end
+      dockerfile: Dockerfile.BE
+    ports:
+      - "5000:5000"
+    depends_on:
+      - helmai
 
   helmfe:
     build:
