@@ -49,7 +49,7 @@ e di eseguire il modulo in locale:
 
 Per tirare su i moduli di BE e AI, utilizzare, direttamente dall'orchestrator, l'istruzione:
 
-`make-dev` 
+`make build-dev` 
 
 # Resources for git dummies
 
