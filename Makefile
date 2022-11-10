@@ -17,7 +17,7 @@ help:
 	@echo "============ ${TB}${CB}Project: ${PROJECT_NAME}${CN}"
 	@echo ""
 	@echo "  ${CY}make build${CN}						build and run containers: ${CR}helmbe${CN}, ${CR}helmai${CN} and ${CR}helmfe${CN}"
-	@echo "  ${CY}make build-dev${CN}						build and run containers: ${CR}helmbe${CN}, ${CR}helmai${CN}. For FE development only"
+	@echo "  ${CY}make build-dev${CN}					build and run containers: ${CR}helmbe${CN}, ${CR}helmai${CN}. For FE development only"
 	@echo "  ${CY}make destroy${CN}						stop and remove running containers: ${CR}helmbe${CN}, ${CR}helmai${CN} and ${CR}helmfe${CN}"
 	@echo "  ${CY}make be-shell${CN}						open shell in ${CR}helmbe${CN}"
 	@echo "  ${CY}make ai-shell${CN}						open shell in ${CR}helmai${CN}"
@@ -43,15 +43,15 @@ build-dev:
 	@echo "============ Done!"
 
 be-shell:
-	@echo "============ ${TB}${CB}Starting shell${CN} ..."
+	@echo "============ ${TB}${CB}Starting shell of${CN} ${CR}helmbe${CN} ..."
 	@docker compose exec -it helmbe /bin/bash
 
 ai-shell:
-	@echo "============ ${TB}${CB}Starting shell${CN} ..."
+	@echo "============ ${TB}${CB}Starting shell of${CN} ${CR}helmai${CN} ..."
 	@docker compose exec -it helmai /bin/bash
 
 fe-shell:
-	@echo "============ ${TB}${CB}Starting shell${CN} ..."
+	@echo "============ ${TB}${CB}Starting shell of${CN} ${CR}helmfe${CN} ..."
 	@docker compose exec -it helmfe /bin/bash
 
 be-logs:
@@ -59,11 +59,11 @@ be-logs:
 	@docker compose logs -f helmbe
 
 ai-logs:
-	@echo "============ ${TB}${CB}Logs of${CN} ${CR}helmbe${CN} ..."
+	@echo "============ ${TB}${CB}Logs of${CN} ${CR}helmai${CN} ..."
 	@docker compose logs -f helmai
 
 fe-logs:
-	@echo "============ ${TB}${CB}Logs of${CN} ${CR}helmbe${CN} ..."
+	@echo "============ ${TB}${CB}Logs of${CN} ${CR}helmfe${CN} ..."
 	@docker compose logs -f helmfe
 
 destroy:
