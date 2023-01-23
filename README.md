@@ -70,8 +70,7 @@ To activate the BE and AI modules, use the instruction directly from the orchest
 <p align="center">
 <img src="imgs/system_architecture.jpg" alt="System Architecture"  width="80%" height="80%">
 </p>
-
-
+<br></br>
 ## :desktop_computer: GUI
 <p align="center">
 <img src="imgs/Helm_ai.png" alt="GUI Helm AI">
