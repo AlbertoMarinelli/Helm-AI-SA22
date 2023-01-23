@@ -72,6 +72,7 @@ To activate the BE and AI modules, use the instruction directly from the orchest
 </p>
 <br></br>
 ## GUI
+
 <p align="center">
 <img src="imgs/Helm_ai.jpg" alt="GUI Helm AI">
 </p>
