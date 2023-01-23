@@ -7,7 +7,7 @@ Project for the Smart Applications course @ [University of Pisa](https://www.uni
 Authors: [Alberto Marinelli](https://github.com/AlbertoMarinelli), [Luca Moroni](https://github.com/Andrew-Wyn), [Davide Amadei](https://github.com/davideamadei), [Diego Arcelli](https://github.com/DiegoArcelli), [Pietro Francaviglia](https://github.com/frankpietro), [Giacomo Cignoni](https://github.com/giacomo-cgn), [Gabriele Marino](https://github.com/GM862001), [Irene Pisani](https://github.com/irenepisani), [Alessandro Capurso](https://github.com/Jek9884), [Roberto Esposito](https://github.com/robbespo00), [Sergio Latrofa](https://github.com/Sergio-Ltr), [Veronica Pistolesi](https://github.com/VeronicaPistolesi)
 
 
-### Goal
+## Goal
 <b>Helm</b> is a customizable <b>AI-based research assistant</b>, for innovation managers and academics who need to retrieve and analyze the most significant sources for any research field. 
 
 <b>Helm</b> will propose to users the best documents and insights according to their queries through a simple interactive dashboard. 
@@ -16,7 +16,7 @@ Unlike traditional academic search engines, Helm intuitively provides <b>topic-c
 
 <br /><br />
 
-### Running the Project
+## Running the Project
 Clone the entire orchestrator repository with the command
 
 `git clone --recurse-submodules https://github.com/Helm-AI-SA22/orchestrator`
@@ -45,7 +45,7 @@ To test the correct functioning of the containers, query the following addresses
 `localhost:5001`
 `localhost:3000`
 
-# Command 'make' not found
+### Command 'make' not found
 If you do not have the make command (i.e. you are on a Windows environment) 
 install make via chocolately, opening the terminal with administrator permissions: 
 
@@ -53,7 +53,7 @@ install make via chocolately, opening the terminal with administrator permission
 
 If you do not have chocolately, install from https://docs.chocolatey.org/en-us/choco/setup
 
-# Frontend in windows environment
+### Frontend in windows environment
 
 Running the frontend from the Docker container can take several minutes in a Windows environment, slowing down the development process too much. 
 If you wish to develop on FE via a Windows environment, it is recommended to stop the frontend container (i.e. via Docker Desktop) and run the module locally: 
@@ -68,13 +68,13 @@ To activate the BE and AI modules, use the instruction directly from the orchest
 
 `make build-dev` 
 
-### System Architecture
+## System Architecture
 <p align="center">
-<img src="imgs/ontology_image.png" alt="System Architecture"  width="80%" height="80%">
+<img src="imgs/system_architecture.jpg" alt="System Architecture"  width="80%" height="80%">
 </p>
 <br /><br />
 
 <h3 align="left">GUI</h3>
 <p align="center">
-<img src="imgs/ontology_image.png" alt="System Architecture"  width="80%" height="80%">
+<img src="imgs/Helm_ai.jpg" alt="GUI Helm AI"  width="80%" height="80%">
 </p>
