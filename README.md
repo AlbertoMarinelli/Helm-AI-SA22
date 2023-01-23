@@ -1,45 +1,62 @@
-# Clone the repository
-Clonare l'intera repository dell'orchestrator con il comando 
+# Siamese Transformer Networks for Key-Point Analysis
+
+Project for the Smart Applications course @ [University of Pisa](https://www.unipi.it/index.php/english)
+
+<img src="imgs/unipi_logo.png" align="right" alt="Unipi logo">
+
+Authors: [Alberto Marinelli](https://github.com/AlbertoMarinelli), [Luca Moroni](https://github.com/Andrew-Wyn), [Davide Amadei[(https://github.com/davideamadei), [Diego Arcelli](https://github.com/DiegoArcelli), [Pietro Francaviglia](https://github.com/frankpietro), [Giacomo Cignoni](https://github.com/giacomo-cgn), [Gabriele Marino](https://github.com/GM862001), [Irene Pisani](https://github.com/irenepisani), [Alessandro Capurso](https://github.com/Jek9884), [Roberto Esposito](https://github.com/robbespo00), [Sergio Latrofa](https://github.com/Sergio-Ltr), [Veronica Pistolesi](https://github.com/VeronicaPistolesi)
+
+
+### Goal
+<b>Helm</b> is a customizable <b>AI-based research assistant</b>, for innovation managers and academics who need to retrieve and analyze the most significant sources for any research field. 
+
+<b>Helm</b> will propose to users the best documents and insights according to their queries through a simple interactive dashboard. 
+
+Unlike traditional academic search engines, Helm intuitively provides <b>topic-centered</b> visualizations, filters and rankings.
+
+<br /><br />
+
+### Running the Project
+Clone the entire orchestrator repository with the command
 
 `git clone --recurse-submodules https://github.com/Helm-AI-SA22/orchestrator`
 
-spostarsi nella cartella dell'orchestator
+move to the orchestrator folder
 
 `cd orchestrator`
 
-controllare di trovarsi sul branch master e di aver fatto pull degli ultimi commit.
+check that you are on the master branch and have pulled the last commits
 
 `git checkout master`
 
 `git pull`
 
-Aggiornare le tre sotto repo con l'istruzione: 
+Update the three sub repos with the instruction: 
 
 `git submodule update --recursive --remote`
 
-I container dei tre sottomoduli possono essere eseguti  lanciando, dalla cartella dell'orchestator( l'esecuzione richiederà diversi minuti ): 
+Containers of the three sub-modules can be executed by launching them from the orchestrator folder (execution will take several minutes): 
 
 `make build` 
 
-per testare il corretto funzionamento dei container interrogare i seguenti indirzzi: 
+To test the correct functioning of the containers, query the following addresses: 
 
 `localhost:5000`
 `localhost:5001`
 `localhost:3000`
 
-# Comando "make" non trovato
-Qualora non si disponesse del comando make (i.e. ci si trova su ambiente Windows), 
-installare make tramite chocolately, aprendo il terminale con i permessi da amministratore: 
+# Command 'make' not found
+If you do not have the make command (i.e. you are on a Windows environment) 
+install make via chocolately, opening the terminal with administrator permissions: 
 
 `choco install make`
 
-Qualora non si disponga di chocolately, installora da https://docs.chocolatey.org/en-us/choco/setup
+If you do not have chocolately, install from https://docs.chocolatey.org/en-us/choco/setup
 
-# Frontend in ambiente windows
+# Frontend in windows environment
 
-L'esecuzione del frontend da container docker può richiedere svariati minuti in ambiete windows, rallendando troppo il processo di sviluppo. 
-Qualora si desidrei sviluppare su FE tramite ambiente Windows si consiglia di stoppare il container del frontend (i.e. tramite Docker Desktop)
-e di eseguire il modulo in locale: 
+Running the frontend from the Docker container can take several minutes in a Windows environment, slowing down the development process too much. 
+If you wish to develop on FE via a Windows environment, it is recommended to stop the frontend container (i.e. via Docker Desktop) and run the module locally: 
 
 `cd frontend`
 
@@ -47,14 +64,17 @@ e di eseguire il modulo in locale:
 
 `npm start`
 
-Per tirare su i moduli di BE e AI, utilizzare, direttamente dall'orchestrator, l'istruzione:
+To activate the BE and AI modules, use the instruction directly from the orchestrator:
 
 `make build-dev` 
 
-# Resources for git dummies
+### System Architecture
+<p align="center">
+<img src="imgs/ontology_image.png" alt="System Architecture"  width="80%" height="80%">
+</p>
+<br /><br />
 
-`` Quick explanation of why and how Git works as it does: https://www.simplilearn.com/tutorials/git-tutorial/what-is-git
-
-Brief overview of the basic commands for Git, with further details on each one: https://www.atlassian.com/git/glossary
-
-Tutorial on how to use Git, step-by-step: https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
+<h3 align="left">GUI</h3>
+<p align="center">
+<img src="imgs/ontology_image.png" alt="System Architecture"  width="80%" height="80%">
+</p>
