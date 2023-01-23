@@ -7,14 +7,14 @@ Project for the Smart Applications course @ [University of Pisa](https://www.uni
 Authors: [Alberto Marinelli](https://github.com/AlbertoMarinelli), [Luca Moroni](https://github.com/Andrew-Wyn), [Davide Amadei](https://github.com/davideamadei), [Diego Arcelli](https://github.com/DiegoArcelli), [Pietro Francaviglia](https://github.com/frankpietro), [Giacomo Cignoni](https://github.com/giacomo-cgn), [Gabriele Marino](https://github.com/GM862001), [Irene Pisani](https://github.com/irenepisani), [Alessandro Capurso](https://github.com/Jek9884), [Roberto Esposito](https://github.com/robbespo00), [Sergio Latrofa](https://github.com/Sergio-Ltr), [Veronica Pistolesi](https://github.com/VeronicaPistolesi)
 
 
-## Goal
+## :bulb: Goal
 <b>Helm</b> is a customizable <b>AI-based research assistant</b>, for innovation managers and academics who need to retrieve and analyze the most significant sources for any research field. 
 
 <b>Helm</b> will propose to users the best documents and insights according to their queries through a simple interactive dashboard. 
 
 Unlike traditional academic search engines, Helm intuitively provides <b>topic-centered</b> visualizations, filters and rankings.
 <br></br>
-## Running the Project
+## :wrench: Running the Project
 Clone the entire orchestrator repository with the command
 
 `git clone --recurse-submodules https://github.com/Helm-AI-SA22/orchestrator`
@@ -66,13 +66,13 @@ To activate the BE and AI modules, use the instruction directly from the orchest
 
 `make build-dev` 
 <br></br>
-## System Architecture
+## :man_technologist: System Architecture
 <p align="center">
 <img src="imgs/system_architecture.jpg" alt="System Architecture"  width="80%" height="80%">
 </p>
 
 
-## GUI
+## :desktop_computer: GUI
 <p align="center">
 <img src="imgs/Helm_ai.png" alt="GUI Helm AI">
 </p>
