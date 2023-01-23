@@ -14,8 +14,6 @@ Authors: [Alberto Marinelli](https://github.com/AlbertoMarinelli), [Luca Moroni]
 
 Unlike traditional academic search engines, Helm intuitively provides <b>topic-centered</b> visualizations, filters and rankings.
 
-<br /><br />
-
 ## Running the Project
 Clone the entire orchestrator repository with the command
 
@@ -74,7 +72,7 @@ To activate the BE and AI modules, use the instruction directly from the orchest
 </p>
 <br /><br />
 
-<h3 align="left">GUI</h3>
+## GUI
 <p align="center">
-<img src="imgs/Helm_ai.jpg" alt="GUI Helm AI"  width="80%" height="80%">
+<img src="imgs/Helm_ai.jpg" alt="GUI Helm AI">
 </p>
