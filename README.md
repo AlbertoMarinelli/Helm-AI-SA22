@@ -1,4 +1,4 @@
-# Siamese Transformer Networks for Key-Point Analysis
+# Helm AI
 
 Project for the Smart Applications course @ [University of Pisa](https://www.unipi.it/index.php/english)
 
