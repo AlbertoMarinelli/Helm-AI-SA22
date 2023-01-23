@@ -4,7 +4,7 @@ Project for the Smart Applications course @ [University of Pisa](https://www.uni
 
 <img src="imgs/unipi_logo.png" align="right" alt="Unipi logo">
 
-Authors: [Alberto Marinelli](https://github.com/AlbertoMarinelli), [Luca Moroni](https://github.com/Andrew-Wyn), [Davide Amadei[(https://github.com/davideamadei), [Diego Arcelli](https://github.com/DiegoArcelli), [Pietro Francaviglia](https://github.com/frankpietro), [Giacomo Cignoni](https://github.com/giacomo-cgn), [Gabriele Marino](https://github.com/GM862001), [Irene Pisani](https://github.com/irenepisani), [Alessandro Capurso](https://github.com/Jek9884), [Roberto Esposito](https://github.com/robbespo00), [Sergio Latrofa](https://github.com/Sergio-Ltr), [Veronica Pistolesi](https://github.com/VeronicaPistolesi)
+Authors: [Alberto Marinelli](https://github.com/AlbertoMarinelli), [Luca Moroni](https://github.com/Andrew-Wyn), [Davide Amadei+(https://github.com/davideamadei), [Diego Arcelli](https://github.com/DiegoArcelli), [Pietro Francaviglia](https://github.com/frankpietro), [Giacomo Cignoni](https://github.com/giacomo-cgn), [Gabriele Marino](https://github.com/GM862001), [Irene Pisani](https://github.com/irenepisani), [Alessandro Capurso](https://github.com/Jek9884), [Roberto Esposito](https://github.com/robbespo00), [Sergio Latrofa](https://github.com/Sergio-Ltr), [Veronica Pistolesi](https://github.com/VeronicaPistolesi)
 
 
 ### Goal
