@@ -13,7 +13,7 @@ Authors: [Alberto Marinelli](https://github.com/AlbertoMarinelli), [Luca Moroni]
 <b>Helm</b> will propose to users the best documents and insights according to their queries through a simple interactive dashboard. 
 
 Unlike traditional academic search engines, Helm intuitively provides <b>topic-centered</b> visualizations, filters and rankings.
-
+<br></br>
 ## Running the Project
 Clone the entire orchestrator repository with the command
 
@@ -42,7 +42,7 @@ To test the correct functioning of the containers, query the following addresses
 `localhost:5000`
 `localhost:5001`
 `localhost:3000`
-
+<br></br>
 ### Command 'make' not found
 If you do not have the make command (i.e. you are on a Windows environment) 
 install make via chocolately, opening the terminal with administrator permissions: 
@@ -50,7 +50,7 @@ install make via chocolately, opening the terminal with administrator permission
 `choco install make`
 
 If you do not have chocolately, install from https://docs.chocolatey.org/en-us/choco/setup
-
+<br></br>
 ### Frontend in windows environment
 
 Running the frontend from the Docker container can take several minutes in a Windows environment, slowing down the development process too much. 
@@ -65,13 +65,12 @@ If you wish to develop on FE via a Windows environment, it is recommended to sto
 To activate the BE and AI modules, use the instruction directly from the orchestrator:
 
 `make build-dev` 
-
+<br></br>
 ## System Architecture
 <p align="center">
 <img src="imgs/system_architecture.jpg" alt="System Architecture"  width="80%" height="80%">
 </p>
-<br /><br />
-
+<br></br>
 ## GUI
 <p align="center">
 <img src="imgs/Helm_ai.jpg" alt="GUI Helm AI">
